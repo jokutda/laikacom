@@ -9,14 +9,16 @@ const pwCont = document.querySelector("#pw-container")
 
 pwBtn.addEventListener("click", function () {
     if (pwInp.value == "67iloveyou") {
-        body.classList.remove("hidden")
-        pwCont.classList.remove("visible")
-        pwCont.classList.add("hidden")
+        unBlip()
     }
     
 })
 
-
+function unBlip() {
+    body.classList.remove("hidden")
+    pwCont.classList.remove("visible")
+    pwCont.classList.add("hidden")
+}
 
 
 
