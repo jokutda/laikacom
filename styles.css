@@ -26,19 +26,19 @@ body {
 
 .paragraph {
     display: block;
-    width: 800px;
+    width: 78vw;
     margin: 0px auto;
 }
 
 #ball-container {
     background-color: #759EB8;
-    margin: 60px 0px 0px 0px;
+    margin: 3vw 0px 0px 0px;
     border: #241715 solid 4px;
     border-width: 3px 0px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 100vw;
 }
 
 .ball-photo {
@@ -47,12 +47,12 @@ body {
 }
 
 #before-ball-img {
-    height: 400px;
+    width: 30vw;
 }
 
 #arrow-img {
     display: inline;
-    height: 200px;
+    width: 30vw;
 }
 
 #arrow-img:hover {
@@ -61,7 +61,7 @@ body {
 
 
 #night-ball-img {
-    height: 400px;
+    width: 30vw;
 }
 
 #ft-container {
@@ -69,8 +69,8 @@ body {
     flex-wrap: nowrap;
     border: #241715 solid 0px;
     border-width: 2px 0px;
-    width: 100%;
-    height: 670px;
+    width: 100vw;
+    height: 40vw;
     overflow-x: auto;
     overflow-y: hidden;
     margin: 60px 0px 0px 0px;
@@ -90,4 +90,17 @@ body {
 
 #poem {
     text-align: left;
+}
+
+#cuddle-img {
+    height: 25vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+#cuddle-cont {
+    border: #241715 solid;
+    border-width: 3px 0px;
+    width: 100vw;
+    background-color: #759EB8;
 }
