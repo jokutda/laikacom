@@ -39,6 +39,7 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 100vw;
+    height: 30vw;
 }
 
 .ball-photo {
@@ -47,7 +48,7 @@ body {
 }
 
 #before-ball-img {
-    width: 30vw;
+    height: 30vw;
 }
 
 #arrow-img {
@@ -61,7 +62,7 @@ body {
 
 
 #night-ball-img {
-    width: 30vw;
+    height: 30vw;
 }
 
 #ft-container {
@@ -90,17 +91,68 @@ body {
 
 #poem {
     text-align: left;
+    margin: 3vw;
 }
 
 #cuddle-img {
     height: 25vw;
     object-fit: cover;
     object-position: center;
+    margin: 0px;
 }
 
 #cuddle-cont {
     border: #241715 solid;
     border-width: 3px 0px;
     width: 100vw;
+    height: 25vw;
     background-color: #759EB8;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #759EB8;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block; 
+    background-color: aquamarine;
+    border: #241715 solid;
+    border-width: 3px;
+    padding: 1vw;
+
+    
+
+}
+
+.dropdown-trigger {
+    cursor: pointer;
+    display: block;
+    height: fit-content;
+    margin: 0px;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: aquamarine;
+    position: absolute;
+    top: 100%;
+    left: -3px;
+    width: 100%;
+    flex-direction: column;
+    border:#241715 solid;
+    border-width: 0px 3px 3px 3px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
 }
