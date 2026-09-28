@@ -7,23 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <script src="open_sesame.js" defer></script>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="banner">
-        <div class="dropdown">
-            <p class="dropdown-trigger">Pages</p>
-            <div class="dropdown-menu">
-                <a href="index.html">Index</a>
-                <a href="page_2.html">Page 2</a>
-                <a>3</a>
-            </div>
-        </div>        
-    </div>
+    <script src="add_banner.js"></script>
     <div id="pw-container" class="visible">
-        <input type="password" placeholder="Enter Password" id="password-inp">
-        <button id="password-btn">Submit</button>
+        <form>
+            <input type="password" placeholder="Enter Password" id="password-inp">
+            <button id="password-btn">Submit</button>
+        </form>
+
     </div>
 
 
@@ -92,7 +88,5 @@
     </div>
 
     <footer><a href="page_2.html">Next Page</a></footer>
-    <script src="main.js"></script>
-    <script src="open_sesame.js"></script>
 </body>
 </html>

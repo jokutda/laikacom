@@ -8,7 +8,7 @@
 body {
     background-color: #FAEBD7;
     text-align: center;
-    margin: 0px;
+    margin: 47px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,18 +119,19 @@ body {
     align-items: stretch;
     justify-content: space-evenly;
     box-sizing: border-box;
+    height: 47px;
     
 }
 
 .dropdown {
     position: relative;
     display: inline-block; 
-    background-color: aquamarine;
+    background-color: rgb(85, 197, 246);
     border: #241715 solid;
     border-width: 3px;
-    padding: 1vw;
+    padding: 8px 24px;
 
-    
+    font-size: larger;
 
 }
 
@@ -143,7 +144,7 @@ body {
 
 .dropdown-menu {
     display: none;
-    background-color: aquamarine;
+    background-color: rgb(85, 197, 246);
     position: absolute;
     top: 100%;
     left: -3px;
@@ -155,4 +156,8 @@ body {
 
 .dropdown:hover .dropdown-menu {
     display: flex;
+}
+
+.dropdown a {
+    border: #241715 ;
 }

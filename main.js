@@ -1,5 +1,4 @@
 const body = document.body
-body.classList.add("hidden")
 
 
 
@@ -20,7 +19,11 @@ function unBlip() {
     pwCont.classList.add("hidden")
 }
 
-
+function blip() {
+    body.classList.add("hidden")
+    pwCont.classList.add("visible")
+    pwCont.classList.remove("hidden")
+}
 
 const arrowBtn = document.querySelector("#arrow-img")
 const nightBallImg = document.querySelector("#night-ball-img")
