@@ -6,6 +6,8 @@ const pwBtn = document.querySelector("#password-btn")
 const pwInp = document.querySelector("#password-inp")
 const pwCont = document.querySelector("#pw-container")
 
+blip()
+
 pwBtn.addEventListener("click", function () {
     if (pwInp.value == "67iloveyou") {
         unBlip()
