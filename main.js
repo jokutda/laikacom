@@ -4,7 +4,11 @@ const body = document.body
 
 const pwBtn = document.querySelector("#password-btn")
 const pwInp = document.querySelector("#password-inp")
-const pwCont = document.querySelector("#pw-container")
+const pwCont = document.querySelector("#pw-form")
+
+pwCont.addEventListener("submit", function (event) {
+    event.preventDefault()
+})
 
 blip()
 
@@ -15,13 +19,16 @@ pwBtn.addEventListener("click", function () {
     
 })
 
+
 function unBlip() {
+    console.log("Unblipping")
     body.classList.remove("hidden")
     pwCont.classList.remove("visible")
     pwCont.classList.add("hidden")
 }
 
 function blip() {
+    console.log("Blipping")
     body.classList.add("hidden")
     pwCont.classList.add("visible")
     pwCont.classList.remove("hidden")
